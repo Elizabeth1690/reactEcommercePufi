@@ -1,61 +1,53 @@
 .main {
   width: 100%;
-  height: 200vh;
+  height: 118vh;
   background-image: url(/src/AssetsImages/img-home3.jpg);
-  border: solid 3px rgb(255, 128, 0);
 }
 
 .nav {
   display: flex;
   flex-direction: row;
-  /*flex-wrap: wrap;*/
+
   justify-content: last baseline;
-  /*align-items: center;*/
-  /*align-content: center;*/
-  border: solid 3px rgb(85, 175, 236);
 }
 .logo-pufi {
   width: 10%;
   height: 60px;
   margin-left: 35px;
   margin-right: 250px;
+  margin-top: 20px;
 }
 
 .nav-menu {
   display: flex;
-  /*margin-right: 0px;*/
   justify-items: center;
   list-style: none;
-  border: solid 3px rgb(31, 192, 79);
 }
 
 .nav-menu-link {
-  /*padding: 5px 7px;*/
   border: none;
   color: white;
-  font-size: 18px;
+  font-size: 15px;
   margin: 5px;
-  border: solid 3px rgb(1, 10, 4);
   margin-top: 100px;
+  font-weight: bolder;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .nav-menu-one {
   display: flex;
   margin-right: 28px;
-  margin-top: 35px;
   justify-content: flex-end;
   list-style: none;
-  border: solid 3px rgb(53, 13, 109);
 }
 
 .nav-menu-link-one {
   padding: 5px 7px;
   border: none;
-  color: rgb(248, 237, 237);
-  font-size: 18px;
+  color: rgb(200, 196, 196);
+  font-size: 10px;
   margin: 5px;
-  border: solid 3px rgb(1, 10, 4);
-  font: weight 900px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .logo-puff {
@@ -80,8 +72,32 @@
 
 .titulo {
   text-align: center;
-  color: white;
+  color: rgb(25, 14, 14);
   font-size: 55px;
   font-family: monospace;
   margin-top: 130px;
+}
+
+.flecha {
+  width: 8px;
+  height: 8px;
+}
+
+.parrafo {
+  width: 108px;
+  height: 30px;
+  border: solid 2px white;
+  justify-items: center;
+  text-align: center;
+  margin: 170px auto auto auto;
+  padding-top: 15px;
+  color: white;
+}
+
+#cuenta {
+  border-right: solid 1px rgb(200, 196, 196);
+}
+
+.nav-menu-item {
+  border-right: solid 1px rgb(200, 196, 196);
 }
