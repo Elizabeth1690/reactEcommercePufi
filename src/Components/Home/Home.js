@@ -9,10 +9,10 @@ export const Home = () => {
   return (
     <div className="calendar text-xs">
       <NavbarPufi />
+      <PufiRain />
+      <PufiPuff />
       <PufiCart />
       <PufiNap />
-      <PufiPuff />
-      <PufiRain />
     </div>
   );
 };
