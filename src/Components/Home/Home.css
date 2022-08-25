@@ -236,3 +236,35 @@
   width: 30px;
   margin-left: 34px;
 }
+
+.container-puff {
+  display: flex;
+}
+
+.grupo-puff {
+  margin-top: 140px;
+  margin-left: 280px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.puff-uno {
+  width: 100px;
+  height: 100px;
+}
+
+.linea-puff {
+  width: 30px;
+  margin-left: 32px;
+}
+
+.parrafo-puff {
+  color: gray;
+  font-size: 13px;
+}
+
+.pull-dos {
+  width: 82%;
+  height: 85vh;
+  margin-left: 230px;
+  border: solid 2px black;
+}
