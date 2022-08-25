@@ -104,7 +104,7 @@
 
 /* Diseño del componente PufiNap*/
 
-.pufinap {
+.espufi {
   text-align: center;
   border: solid 2px red;
   font-family: Arial, Helvetica, sans-serif;
@@ -155,6 +155,7 @@
   font-weight: bold;
 }
 
+/* Diseño de espufi*/
 #pufi {
   margin: auto 5px auto 5px;
 }
@@ -183,7 +184,9 @@
   height: 100px;
 }
 .nap-dos {
-  margin-left: 200px;
+  width: 100%;
+  height: 85vh;
+  margin-left: 91px;
   border: solid 2px rgb(162, 141, 141);
 }
 
@@ -192,6 +195,44 @@
 }
 
 .grupo-nap {
-  margin-top: 320px;
+  margin-top: 140px;
+  margin-left: 420px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.parrafo-nap {
+  color: gray;
+  font-size: 13px;
+}
+
+.linea-nap {
+  width: 30px;
+  margin-left: 25px;
+}
+/*Diseño de cart*/
+.grupo-cart {
+  margin-top: 140px;
   margin-left: 280px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.cart-uno {
+  width: 115%;
+  height: 85vh;
+  border: solid 2px blue;
+  margin-left: 39px;
+}
+
+.container-pufi-cart {
+  display: flex;
+}
+
+.parrafo-cart {
+  color: gray;
+  font-size: 13px;
+}
+
+.linea-cart {
+  width: 30px;
+  margin-left: 34px;
 }

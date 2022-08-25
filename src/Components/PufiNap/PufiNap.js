@@ -1,48 +1,23 @@
-import derecha from "../../AssetsImages/flechas-a-la-derecha.png";
-/*import { useForm, ValidationError } from "@formspree/react";*/
+import napUno from "../../AssetsImages/img-nap.jpg";
+import napDos from "../../AssetsImages/img-naps.webp";
 
-const PufiNap = () => {
-  //SE DEJA ESTE CÓDIGO COMENTADO, PORQUE FORMSPREE NO ME CONECTO, ME SALIA ERROR EN LA RUTA import { useForm, ValidationError } from "@formspree/react"; PRINCIPALMENTE POR LA PARTE DEL @ TOME EL CÓDIGO DE LA PROPIA PÁGINA, MIRE UN VIDEO UNA DOCUMENTACIÓN DE GOOGLE Y CON TODOS ME SALE ERROR EN LO QUE YA MENCIONE*/
-  /*const [state, handleSubmit] = useForm("mpznwror");*/
-  /*{<ValidationError prefix="Email" field="email" errors={state.errors} />}*/
-  /* disabled={state.submitting}*/
-  /* if (state.succeeded) {
-    return <p>Thanks for your submission!</p>;
-  }*/
-  const handleSubmit = () => {};
-
+export default function PufiNap() {
   return (
-    <div className="pufinap">
-      <div></div>
-      <p className="parrafo-uno">NEWSLETTER</p>
-      <p className="parrafo-dos">SUSCRIBITE</p>
-      <p>y enterate de todas las novedades</p>
-      <form
-        action="https://formspree.io/f/mpznwror"
-        method="POST"
-        onSubmit={handleSubmit}
-      >
-        <div className="container-text">
-          <input
-            id="email"
-            type="email"
-            className="text"
-            placeholder="Ingresa tu email"
-            name="email"
-            required
-          ></input>
-
-          <button className="btn-flecha" type="submit">
-            <img
-              src={derecha}
-              className="flecha-derecha"
-              alt="flecha hacía la drecha"
-            />
-          </button>
-        </div>
-      </form>
+    <div className="container-nap">
+      {" "}
+      <div className="grupo-nap">
+        <img src={napUno} className="nap-uno" alt="almohada de viaje" />{" "}
+        <h3>PUFI NAP</h3>
+        <hr className="linea-nap" />
+        <p className="parrafo-nap">
+          Descripción del producto. Este es <br /> un texto simulado
+        </p>
+        <p className="parrafo-nap"> MAS INFO</p>
+      </div>
+      <div>
+        {" "}
+        <img src={napDos} className="nap-dos" alt="almohada de viaje" />
+      </div>
     </div>
   );
-};
-
-export default PufiNap;
+}
