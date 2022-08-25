@@ -5,7 +5,7 @@ export default function PufiPuff() {
     <div className="container-puff">
       {" "}
       <div className="grupo-puff">
-        <img src={puffUno} className="puff-uno" alt="puff" /> <h3>PUFI NAP</h3>
+        <img src={puffUno} className="puff-uno" alt="puff" /> <h3>PUFI Puff</h3>
         <hr className="linea-puff" />
         <p className="parrafo-puff">
           Descripción del producto. Este es <br /> un texto simulado
@@ -14,7 +14,7 @@ export default function PufiPuff() {
       </div>
       <div>
         {" "}
-        <img src={puffDos} className="pull-dos" alt="almohada de viaje" />
+        <img src={puffDos} className="puff-dos" alt="almohada de viaje" />
       </div>
     </div>
   );

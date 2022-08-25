@@ -1,4 +1,6 @@
 import derecha from "../../AssetsImages/flechas-a-la-derecha.png";
+import producto from "../../AssetsImages/img-productos.png";
+
 /*import { useForm, ValidationError } from "@formspree/react";*/
 
 const Espufi = () => {
@@ -13,7 +15,12 @@ const Espufi = () => {
 
   return (
     <div className="espufi">
-      <div></div>
+      <div>
+        {" "}
+        <p className="parrafo-uno">INSTAGRAM</p>
+        <p className="parrafo-dos">#ESPUFI</p>
+        <img src={producto} className="productos" alt="cuadricula de muebles" />
+      </div>
       <p className="parrafo-uno">NEWSLETTER</p>
       <p className="parrafo-dos">SUSCRIBITE</p>
       <p>y enterate de todas las novedades</p>

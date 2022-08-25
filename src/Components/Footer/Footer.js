@@ -1,5 +1,7 @@
 import pufi from "../../AssetsImages/pufi.png";
-
+import facebook from "../../AssetsImages/facebook.png";
+import twitter from "../../AssetsImages/twitter.png";
+import instagram from "../../AssetsImages/instagram.png";
 export default function Footer() {
   return (
     <div>
@@ -23,7 +25,10 @@ export default function Footer() {
           <p>COMPRA 100% SEGURA</p>
         </div>
         <div className="seguinos">
-          <p>SEGUINOS EN</p>
+          <p className="parrafo-redes">SEGUINOS EN</p>
+          <img src={facebook} className="logo-redes" alt="logo" />
+          <img src={twitter} className="logo-redes" alt="logo" />
+          <img src={instagram} className="logo-redes" alt="logo" />
         </div>
       </footer>
     </div>
