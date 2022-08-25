@@ -4,15 +4,17 @@ import PufiCart from "../PufiCart/PufiCart";
 import PufiNap from "../PufiNap/PufiNap";
 import PufiPuff from "../PufiPuff/PufiPuff";
 import PufiRain from "../PufiRain/PufiRain";
+import Footer from "../Footer/Footer";
 
 export const Home = () => {
   return (
-    <div className="calendar text-xs">
+    <div className="Home">
       <NavbarPufi />
       <PufiRain />
       <PufiPuff />
       <PufiCart />
       <PufiNap />
+      <Footer />
     </div>
   );
 };

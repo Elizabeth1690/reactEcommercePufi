@@ -101,3 +101,97 @@
 .nav-menu-item {
   border-right: solid 1px rgb(200, 196, 196);
 }
+
+/* Diseño del componente PufiNap*/
+
+.pufinap {
+  text-align: center;
+  border: solid 2px red;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.parrafo-uno {
+  font-size: 12px;
+  color: rgba(128, 128, 128, 0.911);
+}
+
+.parrafo-dos {
+  font-size: 35px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.text {
+  border: none;
+}
+
+.container-text {
+  width: 570px;
+  padding: 11px;
+  border: solid 1px gray;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.flecha-derecha {
+  width: 20px;
+  height: 20px;
+}
+
+.btn-flecha {
+  border: none;
+  background: none;
+}
+
+/* diseño del pie de página*/
+
+#pie-pagina {
+  display: flex;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 10px;
+  color: rgb(101, 71, 71);
+  font-weight: bold;
+}
+
+#pufi {
+  margin: auto 5px auto 5px;
+}
+
+.pufis {
+  border-right: solid 1px rgba(128, 128, 128, 0.495);
+}
+
+.contactos {
+  margin-left: 160px;
+  border-right: solid 1px rgba(128, 128, 128, 0.495);
+}
+
+.compra {
+  margin-left: 160px;
+  border-right: solid 1px rgba(128, 128, 128, 0.495);
+}
+.seguinos {
+  margin-left: 160px;
+}
+
+/* Diseño de nap*/
+
+.nap-uno {
+  width: 100px;
+  height: 100px;
+}
+.nap-dos {
+  margin-left: 200px;
+  border: solid 2px rgb(162, 141, 141);
+}
+
+.container-nap {
+  display: flex;
+}
+
+.grupo-nap {
+  margin-top: 320px;
+  margin-left: 280px;
+}
