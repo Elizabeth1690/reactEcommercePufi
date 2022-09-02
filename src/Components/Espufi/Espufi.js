@@ -1,17 +1,17 @@
 import derecha from "../../AssetsImages/flechas-a-la-derecha.png";
-import producto from "../../AssetsImages/img-productos.png";
 
-/*import { useForm, ValidationError } from "@formspree/react";*/
+import { useForm, ValidationError } from "@formspree/react";
 
 const Espufi = () => {
-  //SE DEJA ESTE CÓDIGO COMENTADO, PORQUE FORMSPREE NO ME CONECTO, ME SALIA ERROR EN LA RUTA import { useForm, ValidationError } from "@formspree/react"; PRINCIPALMENTE POR LA PARTE DEL @ TOME EL CÓDIGO DE LA PROPIA PÁGINA, MIRE UN VIDEO UNA DOCUMENTACIÓN DE GOOGLE Y CON TODOS ME SALE ERROR EN LO QUE YA MENCIONE*/
-  /*const [state, handleSubmit] = useForm("mpznwror");*/
-  /*{<ValidationError prefix="Email" field="email" errors={state.errors} />}*/
-  /* disabled={state.submitting}*/
-  /* if (state.succeeded) {
-    return <p>Thanks for your submission!</p>;
-  }*/
-  const handleSubmit = () => {};
+  const [state, handleSubmit] = useForm("mpznwror");
+  if (state.succeeded) {
+    return (
+      <p>
+        Gracias por suscribirte a Pufi. ¡Te agregamos a nuestra lista de correo
+        y recibirás actualizaciones directamente en tu buzón de entrada!
+      </p>
+    );
+  }
 
   return (
     <div className="espufi">
@@ -19,7 +19,14 @@ const Espufi = () => {
         {" "}
         <p className="parrafo-uno">INSTAGRAM</p>
         <p className="parrafo-dos">#ESPUFI</p>
-        <img src={producto} className="productos" alt="cuadricula de muebles" />
+        <div className="grid-container">
+          <div className="item-uno"></div>
+          <div className="item-dos"></div>
+          <div className="item-tres"></div>
+          <div className="item-cuatro"></div>
+          <div className="item-cinco"></div>
+          <div className="item-seis"></div>
+        </div>
       </div>
       <p className="parrafo-uno">NEWSLETTER</p>
       <p className="parrafo-dos">SUSCRIBITE</p>
@@ -38,8 +45,12 @@ const Espufi = () => {
             name="email"
             required
           ></input>
-
-          <button className="btn-flecha" type="submit">
+          <ValidationError prefix="Email" field="email" errors={state.errors} />
+          <button
+            className="btn-flecha"
+            type="submit"
+            disabled={state.submitting}
+          >
             <img
               src={derecha}
               className="flecha-derecha"
