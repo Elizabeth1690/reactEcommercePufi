@@ -3,6 +3,7 @@ import derecha from "../../AssetsImages/flechas-a-la-derecha.png";
 import { useForm, ValidationError } from "@formspree/react";
 
 const Espufi = () => {
+  const ACTION = process.env.REACT_APP_ACTION;
   const [state, handleSubmit] = useForm("mpznwror");
   if (state.succeeded) {
     return (
@@ -31,11 +32,7 @@ const Espufi = () => {
       <p className="parrafo-uno">NEWSLETTER</p>
       <p className="parrafo-dos">SUSCRIBITE</p>
       <p>y enterate de todas las novedades</p>
-      <form
-        action="https://formspree.io/f/mpznwror"
-        method="POST"
-        onSubmit={handleSubmit}
-      >
+      <form action="ACTION" method="POST" onSubmit={handleSubmit}>
         <div className="container-text">
           <input
             id="email"
