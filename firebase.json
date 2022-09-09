@@ -1,8 +1,11 @@
 {
   "hosting": {
-    "site": "react-ecommerce-firebase-902fa",
     "public": "build",
-    "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
     "rewrites": [
       {
         "source": "**",
