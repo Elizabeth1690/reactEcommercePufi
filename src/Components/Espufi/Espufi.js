@@ -32,7 +32,11 @@ const Espufi = () => {
       <p className="parrafo-uno">NEWSLETTER</p>
       <p className="parrafo-dos">SUSCRIBITE</p>
       <p>y enterate de todas las novedades</p>
-      <form action="ACTION" method="POST" onSubmit={handleSubmit}>
+      <form
+        action="https://formspree.io/f/mpznwror"
+        method="POST"
+        onSubmit={handleSubmit}
+      >
         <div className="container-text">
           <input
             id="email"
